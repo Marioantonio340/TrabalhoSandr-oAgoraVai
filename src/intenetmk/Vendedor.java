@@ -1,7 +1,7 @@
 package intenetmk;
 import java.util.Calendar;
 
-public class Vendedor extends Pessoa{
+public class Vendedor extends Pessoa implements AcoesVenda{
         //Atributos
     private int ID;
     private float comissao;
@@ -26,20 +26,15 @@ public class Vendedor extends Pessoa{
         return comissao;
     }
 
-    public void setComissao(float comissao) {
-        this.comissao=(this.qtdVenda*comissao); //sera substituido por variavel de valor da venda
-        this.comissao = ((this.comissao*10)/100);
-    }
+   
 
     public int getQtdVenda() {
         return qtdVenda;
     }
 
-    public void setQtdVenda(int qtdVenda) {
-        this.qtdVenda = qtdVenda;
-    }
         
 	// Métodos Abstratos
+
 	@Override
 	public String getNome() {
 		return this.nome;
@@ -63,4 +58,14 @@ public class Vendedor extends Pessoa{
 		
 	}
 
+    @Override
+    public void vender() {
+    this.qtdVenda ++;
+    }
+
+    @Override
+    public void calcularComissao(float valor) {
+    this.comissao=(this.qtdVenda*valor); //sera substituido por variavel de valor da venda
+    this.comissao = ((this.comissao*10)/100);
+    }
 }
