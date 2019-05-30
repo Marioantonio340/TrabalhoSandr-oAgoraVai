@@ -5,7 +5,14 @@ public class Contrato {
     private int plano;
     private float valor;
     public boolean fidelidade;
-    //Metodos
+    //Metodos construtores
+    public Contrato(String plano){
+        
+    }
+    
+    
+    
+    //metodos
 
     public int getPlano() {
         return plano;
