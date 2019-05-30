@@ -10,7 +10,7 @@ public class Contrato {
         
         this.fidelidade = true;
         this.valor =0;
-        this.plano = "15 Megas";
+        this.plano = plano;
     }
     
     
@@ -40,5 +40,12 @@ public class Contrato {
     public void setFidelidade(boolean fidelidade) {
         this.fidelidade = fidelidade;
     }
+
+    @Override
+    public String toString() {
+        return "Contrato{" + "plano=" + plano + ", valor=" + valor + ", fidelidade=" + fidelidade + '}';
+    }
+    
+    
     
 }
