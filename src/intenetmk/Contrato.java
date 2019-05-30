@@ -2,23 +2,26 @@ package intenetmk;
 
 public class Contrato {
     //Atributos
-    private int plano;
+    private String plano;
     private float valor;
     public boolean fidelidade;
     //Metodos construtores
     public Contrato(String plano){
         
+        this.fidelidade = true;
+        this.valor =0;
+        this.plano = "15 Megas";
     }
     
     
     
     //metodos
 
-    public int getPlano() {
+    public String getPlano() {
         return plano;
     }
 
-    public void setPlano(int plano) {
+    public void setPlano(String plano) {
         this.plano = plano;
     }
 
