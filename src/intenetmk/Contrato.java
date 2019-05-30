@@ -33,7 +33,7 @@ public class Contrato {
         this.valor = valor;
     }
 
-    public boolean isFidelidade() {
+    public boolean getFidelidade() {
         return fidelidade;
     }
 

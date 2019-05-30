@@ -6,7 +6,16 @@ public class Assinante extends Pessoa {
     public String dataNasc;
     private String tel;
     //Metodo construtor
+    
     //Metodos
+
+    public Assinante(String nome, int cpf, String endereco, String dataNasc, String tel ) {
+        super(nome, cpf);
+        this.endereco = endereco;
+        this.dataNasc = dataNasc;
+        this.tel = tel;
+    }
+
 
     public String getEndereco() {
         return endereco;
