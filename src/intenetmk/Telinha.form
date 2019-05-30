@@ -386,7 +386,7 @@
         <Component class="javax.swing.JLabel" name="jLabel13">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Klayv\Documents\NetBeansProjects\TrabalhoSandr-oAgoraVai\src\intenetmk\download.jfif"/>
+              <Image iconType="2" name="C:\Users\Klayv\Documents\NetBeansProjects\TrabalhoSandr-oAgoraVai\src\download.jfif"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel13"/>
           </Properties>

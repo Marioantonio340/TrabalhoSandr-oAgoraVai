@@ -148,7 +148,7 @@ public class Telinha extends javax.swing.JFrame {
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sim", "Não" }));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\Klayv\\Documents\\NetBeansProjects\\TrabalhoSandr-oAgoraVai\\src\\intenetmk\\download.jfif")); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\Klayv\\Documents\\NetBeansProjects\\TrabalhoSandr-oAgoraVai\\src\\download.jfif")); // NOI18N
         jLabel13.setText("jLabel13");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

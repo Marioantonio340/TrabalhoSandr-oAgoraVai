@@ -10,7 +10,9 @@ public class IntenetMK {
         Contrato c[] = new Contrato[2];
         c[0] = new Contrato("15 megas");
         c[1] = new Contrato("50 megas");
-    
+     
+        Assinante a[] = new Assinante[2];
+        
         
         System.out.println(c[0].toString());
     }

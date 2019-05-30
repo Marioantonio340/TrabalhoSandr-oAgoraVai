@@ -64,4 +64,10 @@ public class Assinante extends Pessoa {
 		this.cpf = cpf;
 		
 	}
+
+    @Override
+    public String toString() {
+        return "Assinante{" +super.toString()+ "endereco=" + endereco + ", dataNasc=" + dataNasc + ", tel=" + tel + '}';
+    }
+            
 }
