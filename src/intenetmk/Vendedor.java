@@ -7,11 +7,15 @@ public class Vendedor extends Pessoa implements AcoesVenda{
     private float comissao;
     public int qtdVenda;
         //Metodo construtor
-    public Vendedor(){
-        this.qtdVenda=0;
+
+    public Vendedor(int ID, float comissao, String nome, int cpf) {
+        super(nome, cpf);
+         this.qtdVenda=0;
         this.comissao=0;
-        this.ID= Calendar.YEAR+Calendar.DAY_OF_YEAR+Calendar.HOUR_OF_DAY+Calendar.MINUTE+Calendar.SECOND;
+        this.ID = Calendar.YEAR+Calendar.DAY_OF_YEAR+Calendar.HOUR_OF_DAY+Calendar.MINUTE+Calendar.SECOND;
     }
+
+       
         //Metodos
 
     public String getID() {//Recebe um id int e retorna um id string

@@ -5,11 +5,16 @@ public class Tecnico extends Pessoa {
 	private float tempoMedio;
 	private int instalacoesDia;
 	//Metodo Construtor
-	public Tecnico() {
-		this.tempoMedio=0;
-		this.instalacoesDia=0;
+
+    public Tecnico(float tempoMedio, String nome, int cpf) {
+        super(nome, cpf);
+        this.tempoMedio = tempoMedio;
+        this.instalacoesDia = 0;
+    }
+
 		
-	}
+		
+	
 	//Metodos
 	
 	public float getTempoMedio() {
