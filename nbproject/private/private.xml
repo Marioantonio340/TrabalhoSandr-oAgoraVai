@@ -4,11 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/mario/Documents/NetBeansProjects/IntenetMK/src/intenetmk/Contrato.java</file>
-            <file>file:/C:/Users/mario/Documents/NetBeansProjects/IntenetMK/src/intenetmk/IntenetMK.java</file>
-            <file>file:/C:/Users/mario/Documents/NetBeansProjects/IntenetMK/src/intenetmk/Pessoa.java</file>
             <file>file:/C:/Users/mario/Documents/NetBeansProjects/IntenetMK/src/intenetmk/Tecnico.java</file>
+            <file>file:/C:/Users/mario/Documents/NetBeansProjects/IntenetMK/src/intenetmk/Telinha.java</file>
             <file>file:/C:/Users/mario/Documents/NetBeansProjects/IntenetMK/src/intenetmk/Vendedor.java</file>
-            <file>file:/C:/Users/mario/Documents/NetBeansProjects/IntenetMK/src/intenetmk/Assinante.java</file>
+            <file>file:/C:/Users/mario/Documents/NetBeansProjects/IntenetMK/src/intenetmk/AcoesVenda.java</file>
         </group>
     </open-files>
 </project-private>

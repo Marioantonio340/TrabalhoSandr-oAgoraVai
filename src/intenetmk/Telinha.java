@@ -64,7 +64,7 @@ public class Telinha extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(0, 153, 255));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
-        jButton1.setText("Cadastrar Plano");
+        jButton1.setText("Salvar Contrato");
 
         jTextField1.setText("Nome Completo do Cliente");
 
@@ -247,7 +247,7 @@ public class Telinha extends javax.swing.JFrame {
                     .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
                 .addComponent(jButton1)
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
