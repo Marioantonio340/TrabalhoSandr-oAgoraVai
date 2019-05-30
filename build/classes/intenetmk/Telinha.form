@@ -188,11 +188,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
-                  <EmptySpace pref="53" max="32767" attributes="0"/>
-=======
                   <EmptySpace pref="18" max="32767" attributes="0"/>
->>>>>>> acea62bf7cf7a9b9595b14134f7ebfe1d2dcd86e
               </Group>
           </Group>
         </DimensionLayout>
@@ -206,7 +202,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="11" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Salvar Contrato"/>
+            <Property name="text" type="java.lang.String" value="Cadastrar Plano"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField1">
