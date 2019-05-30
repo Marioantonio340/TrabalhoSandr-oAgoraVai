@@ -6,11 +6,11 @@ public class Contrato {
     private float valor;
     public boolean fidelidade;
     //Metodos construtores
-    public Contrato(String plano){
+    public Contrato(){
         
         this.fidelidade = true;
         this.valor =0;
-        this.plano = plano;
+        this.plano = "banda";
     }
     
     
