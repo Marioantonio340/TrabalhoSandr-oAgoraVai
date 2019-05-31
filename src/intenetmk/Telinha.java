@@ -29,9 +29,13 @@ public class Telinha extends javax.swing.JFrame {
 
         jMenu2 = new javax.swing.JMenu();
         jComboBox2 = new javax.swing.JComboBox<>();
+<<<<<<< HEAD
         jPanel2 = new javax.swing.JPanel();
         jComboBox4 = new javax.swing.JComboBox<>();
         jComboBox5 = new javax.swing.JComboBox<>();
+=======
+        jProgressBar1 = new javax.swing.JProgressBar();
+>>>>>>> 91c25041b02d9471e54e55b541205c17c6daa5b7
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         NomeCliente = new javax.swing.JTextField();
@@ -315,12 +319,17 @@ public class Telinha extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField6ActionPerformed
 
+<<<<<<< HEAD
     private void NomeClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NomeClienteMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_NomeClienteMouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         
+=======
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+>>>>>>> 91c25041b02d9471e54e55b541205c17c6daa5b7
     }//GEN-LAST:event_jButton1MouseClicked
 
     /**
@@ -381,7 +390,12 @@ public class Telinha extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JPanel jPanel1;
+<<<<<<< HEAD
     private javax.swing.JPanel jPanel2;
+=======
+    private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JTextField jTextField1;
+>>>>>>> 91c25041b02d9471e54e55b541205c17c6daa5b7
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;

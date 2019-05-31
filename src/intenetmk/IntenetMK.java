@@ -1,20 +1,19 @@
 
 package intenetmk;
 
+import java.util.ArrayList;
+
 
 public class IntenetMK {
 
     
     public static void main(String[] args) {
-    
-        Contrato c[] = new Contrato[2];
-        c[0] = new Contrato("15 megas");
-        c[1] = new Contrato("50 megas");
-     
-        Assinante a[] = new Assinante[2];
+         
+        ArrayList<Contrato> listaContrato = new ArrayList<>();
+        Contrato c = new Contrato();
         
-        
-        System.out.println(c[0].toString());
     }
+
+    
         
 }

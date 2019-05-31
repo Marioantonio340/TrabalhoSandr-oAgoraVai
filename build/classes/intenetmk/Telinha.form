@@ -26,6 +26,7 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
+<<<<<<< HEAD
     <Container class="javax.swing.JPanel" name="jPanel2">
 
       <Layout>
@@ -70,6 +71,9 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
+=======
+    <Component class="javax.swing.JProgressBar" name="jProgressBar1">
+>>>>>>> 91c25041b02d9471e54e55b541205c17c6daa5b7
     </Component>
   </NonVisualComponents>
   <Properties>
