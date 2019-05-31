@@ -9,9 +9,9 @@ public class IntenetMK {
     
     public static void main(String[] args) {
          
-        ArrayList<Contrato> listaContrato = new ArrayList<>();
-        Contrato c = new Contrato();
-        
+       Telinha c;
+        c = new Telinha();
+           c.setVisible(true);
     }
 
     
