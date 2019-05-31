@@ -5,6 +5,10 @@
  */
 package intenetmk;
 
+import java.util.ArrayList;
+import javaxswing..JOptionPane;
+
+
 /**
  *
  * @author mario
@@ -14,6 +18,8 @@ public class Telinha extends javax.swing.JFrame {
     /**
      * Creates new form Telinha
      */
+    ArrayList <Contrato> arquivo2 = new ArrayList<Contrato>();
+    
     public Telinha() {
         initComponents();
     }
@@ -29,6 +35,9 @@ public class Telinha extends javax.swing.JFrame {
 
         jMenu2 = new javax.swing.JMenu();
         jComboBox2 = new javax.swing.JComboBox<>();
+
+        jProgressBar1 = new javax.swing.JProgressBar();
+
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jNome = new javax.swing.JTextField();
@@ -43,7 +52,9 @@ public class Telinha extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jCpf = new javax.swing.JTextField();
         jEndereco = new javax.swing.JTextField();
-        telefone = new javax.swing.JTextField();
+
+        jTel = new javax.swing.JTextField();
+
         jData = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -71,12 +82,15 @@ public class Telinha extends javax.swing.JFrame {
 
         jNome.setToolTipText("Nome Completo do Cliente");
 
+
         jLabel1.setBackground(new java.awt.Color(51, 204, 255));
         jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         jLabel1.setText("Contrato de Vendas - InternetMK");
 
         jPlano.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "15 MEGAS - 69,90", "50 MEGAS - 89,90", "100 MEGAS - 99,90", "300 MEGAS - 129,90" }));
+
         jPlano.setToolTipText("selecione o plano");
+
         jPlano.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPlanoActionPerformed(evt);
@@ -104,19 +118,24 @@ public class Telinha extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel8.setText("Cpf");
 
+
         jCpf.setToolTipText("cpf do cliente");
+
         jCpf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCpfActionPerformed(evt);
             }
         });
 
+
         jEndereco.setToolTipText("Nome da rua, Número da casa, Nome do Bairro");
+
         jEndereco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jEnderecoActionPerformed(evt);
             }
         });
+
 
         telefone.setToolTipText("telefone do cliente");
         telefone.addActionListener(new java.awt.event.ActionListener() {
@@ -132,20 +151,25 @@ public class Telinha extends javax.swing.JFrame {
             }
         });
 
+
         jLabel9.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel9.setText("Vendedor:");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel10.setText("Tecnico:");
 
+
         jVendedor.setToolTipText("Nome Completo do vendedor");
+
         jVendedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jVendedorActionPerformed(evt);
             }
         });
 
+
         jTecnico.setToolTipText("Nome Completo do tecnico");
+
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel11.setText("Plano:");
@@ -154,6 +178,7 @@ public class Telinha extends javax.swing.JFrame {
         jLabel12.setText("Cliente fidelizado?");
 
         jFidelidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sim", "Não" }));
+
         jFidelidade.setToolTipText("selecione se ha fidelização");
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/logo.jpg"))); // NOI18N
@@ -161,6 +186,7 @@ public class Telinha extends javax.swing.JFrame {
         cadastrados.setBackground(new java.awt.Color(0, 255, 255));
         cadastrados.setForeground(new java.awt.Color(255, 255, 255));
         cadastrados.setToolTipText("selecione o plano desejado");
+
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -170,6 +196,7 @@ public class Telinha extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
                             .addComponent(jLabel3)
@@ -197,8 +224,26 @@ public class Telinha extends javax.swing.JFrame {
                                     .addComponent(telefone, javax.swing.GroupLayout.Alignment.LEADING))
                                 .addGap(453, 453, 453))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12))
+                        .addGap(61, 61, 61)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jNome)
+                            .addComponent(jEndereco, javax.swing.GroupLayout.DEFAULT_SIZE, 348, Short.MAX_VALUE)
+                            .addComponent(jVendedor)
+                            .addComponent(jTecnico)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+
                                 .addComponent(jLabel2)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -215,6 +260,7 @@ public class Telinha extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(88, 88, 88))
+
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,6 +271,7 @@ public class Telinha extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+
                         .addGap(42, 42, 42)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -234,6 +281,7 @@ public class Telinha extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(jNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
@@ -245,11 +293,13 @@ public class Telinha extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
+
                     .addComponent(telefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jData))
+
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -266,9 +316,11 @@ public class Telinha extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(jFidelidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addGap(85, 85, 85))
+
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -289,9 +341,11 @@ public class Telinha extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jPlanoActionPerformed
 
+
     private void telefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telefoneActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_telefoneActionPerformed
+
 
     private void jCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCpfActionPerformed
         // TODO add your handling code here:
@@ -305,9 +359,11 @@ public class Telinha extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jVendedorActionPerformed
 
+
     private void jDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jDataActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jDataActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -344,7 +400,9 @@ public class Telinha extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JComboBox<String> cadastrados;
+
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JTextField jCpf;
@@ -368,8 +426,10 @@ public class Telinha extends javax.swing.JFrame {
     private javax.swing.JTextField jNome;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JComboBox<String> jPlano;
+
     private javax.swing.JTextField jTecnico;
     private javax.swing.JTextField jVendedor;
     private javax.swing.JTextField telefone;
+
     // End of variables declaration//GEN-END:variables
 }
